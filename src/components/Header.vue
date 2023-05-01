@@ -8,23 +8,26 @@
     </div>
     <div style="width: 40%;">
       <input type="text" name="search" id="search">
-      <font-awesome-icon icon="fa-solid fa-magnifying-glass" style="right: 30px;color: #bdccdc;" />
+      <font-awesome-icon icon="fa-solid fa-magnifying-glass" style="right: 43px; top: 13px; color: #bdccdc;  cursor: pointer; padding: 13px;" />
     </div>
-    <ul>
+  <ul>
       <li class="navbars"><font-awesome-icon icon="fa-regular fa-user" /> Giriş Yap</li>
       <li class="navbars"><font-awesome-icon icon="fa-regular fa-heart" /> Favorilerim</li>
       <li class="navbars"><font-awesome-icon icon="fa-solid fa-box" /> Envanterim</li>
     </ul>
+   
   </header>
 </template>
 
 <style scoped>
+
 header {
   background-color: rgb(137, 137, 137);
   width: 100%;
   height: 10rem;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  display: inline-flex;
 }
 
 #search {
@@ -51,8 +54,10 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: inline;
-  width: 40%;
+  align-items: right;
+  padding: 0;
+  white-space: nowrap;
+  /* overflow: hidden;  */
 }
 
 .navbars {
@@ -68,12 +73,12 @@ ul {
 .navbars:hover {
   background-color: rgb(122, 122, 122);
   transition: 0.2s;
+  cursor: pointer;
 }
 
 
 .logo {
   display: block;
-  margin-left: 5%;
   float: left;
   text-align: center;
   width: 20%;
