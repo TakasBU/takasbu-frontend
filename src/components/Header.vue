@@ -4,16 +4,16 @@
 <template>
   <header>
     <div class="logo">
-      <img alt="TakasBu" src="../assets/logo.png" width="150" height="150" />
+      <img alt="TakasBu" src="../assets/logo.png" width="150" height="70" />
     </div>
     <div style="width: 40%;">
       <input type="text" name="search" id="search">
       <font-awesome-icon icon="fa-solid fa-magnifying-glass" style="right: 43px; top: 13px; color: #bdccdc;  cursor: pointer; padding: 13px;" />
     </div>
   <ul>
-      <li class="navbars"><font-awesome-icon icon="fa-regular fa-user" /> Giriş Yap</li>
-      <li class="navbars"><font-awesome-icon icon="fa-regular fa-heart" /> Favorilerim</li>
-      <li class="navbars"><font-awesome-icon icon="fa-solid fa-box" /> Envanterim</li>
+      <a href="login"><li class="navbars"><font-awesome-icon icon="fa-regular fa-user" /> Giriş Yap</li></a>
+      <a href="favorite"><li class="navbars"><font-awesome-icon icon="fa-regular fa-heart" /> Favorilerim</li></a>
+      <a href="inventory"><li class="navbars"><font-awesome-icon icon="fa-solid fa-box" /> Envanterim</li></a>
     </ul>
    
   </header>
@@ -82,5 +82,8 @@ ul {
   float: left;
   text-align: center;
   width: 20%;
+}
+a{
+  text-decoration: none;
 }
 </style>

@@ -1,21 +1,21 @@
+/* eslint-disable no-unused-vars */
 import { createApp } from 'vue'
 import App from './App.vue'
-
+import router from './router'
+import axios from 'axios'
+import * as bootstrap from 'bootstrap'
 import './assets/main.css'
 
-/* import the fontawesome core */
+const app = createApp(App)
+
+app.use(router)
+
+app.mount('#app')
+
 import { library } from '@fortawesome/fontawesome-svg-core'
-
-/* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-/* import specific icons */
 import { faMagnifyingGlass,faBox } from '@fortawesome/free-solid-svg-icons'
 import { faUser,faHeart } from '@fortawesome/free-regular-svg-icons'
-
-/* add icons to the library */
 library.add(faMagnifyingGlass, faUser,faHeart,faBox)
 
-createApp(App)
-  .component('font-awesome-icon', FontAwesomeIcon)
-  .mount('#app')
+app.component('font-awesome-icon', FontAwesomeIcon)
